@@ -1,0 +1,186 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+  /* Fonts */
+  --Big-Shoulders-Display: "Big Shoulders Display", cursive;
+  --Lexend-Deca: "Lexend Deca", sans-serif;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-size: 15px;
+  background: var(--Very-light-gray-background-headings-buttons);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "sedans"
+    "suvs"
+    "luxury";
+}
+
+.container .sedans {
+  background-color: var(--Bright-orange);
+}
+
+.container .suvs {
+  background-color: var(--Dark-cyan);
+}
+
+.container .luxury {
+  background-color: var(--Very-dark-cyan);
+}
+
+.sedans-img {
+  background-image: url("./images/icon-sedans.svg");
+  width: 64px;
+  height: 40px;
+}
+
+.suvs-img {
+  background-image: url("./images/icon-suvs.svg");
+  width: 64px;
+  height: 40px;
+}
+
+.luxury-img {
+  background-image: url("./images/icon-luxury.svg");
+  width: 64px;
+  height: 40px;
+}
+
+button {
+  width: 8.5rem;
+  border-radius: 1.5rem;
+  border: 0;
+  height: 2.5rem;
+  font-family: var(--Lexend-Deca);
+  cursor: pointer;
+}
+
+h2 {
+  font-family: var(--Big-Shoulders-Display);
+  color: var(--Very-light-gray-background-headings-buttons);
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  font-family: var(--Lexend-Deca);
+  color: var(--Very-light-gray-background-headings-buttons);
+  width: 14rem;
+  margin: 2rem 0;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding: 2.5rem;
+}
+
+.sedans > button {
+  color: var(--Bright-orange);
+}
+
+.suvs > button {
+  color: var(--Dark-cyan);
+}
+
+.luxury > button {
+  color: var(--Very-dark-cyan);
+}
+
+button:hover {
+  color: #fff;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  border: 2px solid;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 45%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "sedans"
+      "suvs"
+      "luxury";
+  }
+}
