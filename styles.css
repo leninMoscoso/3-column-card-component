@@ -169,10 +169,10 @@ button:hover {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .container {
-    width: 63%;
-    max-width: 1440px;
+    width: 100%;
+    min-width: 870px;
     margin: 11% auto;
 
     border-radius: 0.5rem;
@@ -180,7 +180,7 @@ button:hover {
 
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(3, 18rem);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
       "sedans"
