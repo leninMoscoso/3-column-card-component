@@ -173,14 +173,22 @@ button:hover {
   .container {
     width: 90%;
     max-width: 1440px;
-    margin: 40px auto;
+    margin: 12%;
 
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    place-content: center;
+    grid-template-columns: repeat(3, 18rem);
+    grid-template-rows: repeat(3, 30rem);
     grid-template-areas:
       "sedans"
       "suvs"
       "luxury";
+  }
+  p {
+    margin-bottom: 4rem;
+    width: 13.1rem;
+  }
+  button {
+    height: 3rem;
   }
 }
