@@ -73,12 +73,15 @@ body {
 }
 
 .container {
-  margin: 5rem 1.5rem;
+  padding: 15rem 0;
   --min: 20ch;
 
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 19rem));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--min)), 19.2rem)
+  );
   grid-template-rows: minmax(27.3rem, min(60vw, 31.2rem));
 }
 
@@ -129,7 +132,8 @@ p {
   width: 13rem;
   color: #ffffffbf;
   opacity: 0.8;
-  margin-block-start: 2rem;
+  margin-block-start: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .sedans {
