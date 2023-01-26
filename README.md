@@ -8,7 +8,7 @@ This is a solution to the "[3-column preview card component](https://www.fronten
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-This solution is very particular because is Reponsive but no media queries and as it uses the concepts of "Intrinsic Web Design" Term introduced in 2018 by [Jen Simmons](https://talks.jensimmons.com/videos/h0XWcf). 
+This solution is very particular, because it is responsive without using media queries. It also tries to put into practice the concepts of "Intrinsic Web Design". Term used in 2018 by [Jen Simmons](https://talks.jensimmons.com/videos/h0XWcf). 
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
